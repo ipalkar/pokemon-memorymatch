@@ -1,0 +1,66 @@
+body{
+    height: 100vh;
+    margin: 0;
+    background-color: aliceblue;
+}
+
+.header{
+    height: 10vh;
+    background-color: lavenderblush;
+
+}
+
+.cardArea{
+    height:80vh;
+    width: 75vw;
+    margin: auto;
+    padding: 10px;
+}
+
+.cardContainer{
+    width: 16.66%;
+    float: left;
+    height: 33.33%;
+
+}
+.card{
+    top: 5%;
+    left: 5%;
+    height: 90%;
+    width: 90%;
+    background-color: orange;
+    position: relative;
+    float: left;
+
+}
+
+.cardFront, .cardBack{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+
+}
+
+
+.cardFront{
+    background-color: blanchedalmond;
+
+}
+
+.cardBack{
+    background-color: pink;
+
+}
+
+.card:hover>.cardBack{
+    display: none;
+}
+
+.footer{
+    height: 10vh;
+    background-color: lavender;
+}
+
+

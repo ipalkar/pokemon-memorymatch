@@ -1,0 +1,1 @@
+var pictures = ["pichu.png", "cleffa.png", "azuril.png", "igglybuff.png", "munchlax.png", "teddiursa.png", "togepi.png", "wynaut.png"];
