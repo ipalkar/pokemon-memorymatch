@@ -1,0 +1,122 @@
+body{
+    height: 100vh;
+    margin: 0;
+    background-color: white;
+}
+
+.header{
+    height: 10vh;
+}
+.start-logo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100px;
+    width: 100px;
+    padding: 0.5rem;
+
+}
+.pokemon-center{
+    height:15vh;
+    background-color: #c43b29;
+}
+
+.button-style{
+    border-radius: 15px;
+    width: 150px;
+    height: 40px;
+    border-width: 5px;
+    border-color: black;
+    font-family: Chalkboard;
+    margin: 1rem;
+    font-size: 20px;
+}
+
+.pikachu{
+    position: absolute;
+    right: 0px;
+    bottom: 15px;
+}
+
+.cardArea{
+    height:65vh;
+    width: 70vw;
+    margin: auto;
+    padding: 10px;
+}
+
+.egg{
+    height: 50%;
+    display: block;
+    margin: auto;
+    padding: 25px;
+}
+
+.cardContainer{
+    width: 16.66%;
+    float: left;
+    height: 33.33%;
+}
+
+
+.card{
+    top: 5%;
+    left: 5%;
+    height: 90%;
+    width: 90%;
+    position: relative;
+    float: left;
+    border-style: solid;
+    border-color: darkgrey;
+    border-width: 5px;
+    border-radius:5px;
+    box-shadow: gray;
+}
+
+.cardFront, .cardBack{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+
+}
+.title{
+    font-family: Chalkboard;
+    font-size: 80px;
+    margin: 1.5rem;
+}
+
+.start{
+    position:absolute;
+    top:40%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.cardFront{
+    background-color: beige;
+}
+
+.cardBack{
+    background-color: black;
+}
+
+.game-style{
+    font-size: 20px;
+    font-family: Chalkboard;
+}
+
+
+.footer{
+    height: 15vh;
+    margin-left: 15%;
+    padding: 10px;
+
+
+}
+
+.hidden{
+    display: none;
+}
