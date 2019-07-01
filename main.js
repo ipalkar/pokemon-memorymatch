@@ -65,12 +65,20 @@ function hideWrongCards(){
     compareCard = [];
 }
 
+
+function turnCardsOn(){
+    $('.card').click(clickBackOfCard);
+
+}
+
 function compareCards(){
 
     if (images.length == 2 && images[0] != images[1]){
         setTimeout(hideWrongCards,1000);
+        $('.card').off();
         attempts++;
         $('.responseDiv').empty().append(attempts);
+        setTimeout(turnCardsOn,1000);
     }
     else if(images[0]===images[1]){
         images =[];
@@ -107,7 +115,7 @@ function reset(){
 }
 
 function youWin(){
-    if(matches == 9){
+    if(matches === 9){
     }
 }
 
