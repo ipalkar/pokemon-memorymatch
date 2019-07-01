@@ -107,7 +107,7 @@ function reset(){
 }
 
 function youWin(){
-    if(matches == 9){
+    if(matches === 9){
     }
 }
 
