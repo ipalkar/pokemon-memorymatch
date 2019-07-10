@@ -19,7 +19,6 @@ function initiateApp(){
 function startGame(){
     $('.game').removeClass('hidden');
     $('.start').addClass('hidden');
-    //$('.pikachu').addClass('hidden');
 }
 
 function back(){
@@ -37,7 +36,7 @@ function createCards(){
         var cardFront = $('<div></div>', {class: "cardFront"});
         var cardBack = $('<div></div>', {class: "cardBack"});
         var cardFrontImage = $('<img>',{class: "cardFront",src:pictures[i]});
-        var cardBackImage = $('<img>',{class: 'egg',src:'pokeball-icon-3.png'});
+        var cardBackImage = $('<img>',{class: 'card-logo',src:'daycare.jpg'});
         $(card).append(cardFront);
         $(cardFront).append(cardFrontImage);
         $(card).append(cardBack);
@@ -65,10 +64,8 @@ function hideWrongCards(){
     compareCard = [];
 }
 
-
 function turnCardsOn(){
     $('.card').click(clickBackOfCard);
-
 }
 
 function compareCards(){
@@ -77,7 +74,7 @@ function compareCards(){
         setTimeout(hideWrongCards,1000);
         $('.card').off();
         attempts++;
-        $('.responseDiv').empty().append(attempts);
+        $('.attempts-area').empty().append("Attempts: "+ attempts);
         setTimeout(turnCardsOn,1000);
     }
     else if(images[0]===images[1]){
@@ -85,8 +82,8 @@ function compareCards(){
         compareCard = [];
         attempts++;
         matches++;
-        $('.responseDiv').empty().append(attempts);
-        $('.responseMatches').empty().append(matches);
+        $('.attempts-area').empty().append("Attempts: "+ attempts);
+        $('.matches-area').empty().append("Matches: "+ matches);
     }
 }
 
@@ -110,12 +107,13 @@ function reset(){
     $('.cardContainer').remove();
     createCards();
     $('.card').click(clickBackOfCard);
-    $('.responseDiv').empty();
-    $('.responseMatches').empty();
+    $('.attempts-area').empty().append("Attempts: 0");
+    $('.matches-area').empty().append("Matches: 0");
 }
 
 function youWin(){
     if(matches === 9){
+        console.log("you won! woohoo!")
     }
 }
 

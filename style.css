@@ -1,12 +1,11 @@
 body{
     height: 100vh;
     margin: 0;
-    background-color: white;
+    background-color: #faf4e1;
+    color:#6F502D;
 }
 
-.header{
-    height: 10vh;
-}
+
 .start-logo{
     display: block;
     margin-left: auto;
@@ -16,42 +15,29 @@ body{
     padding: 0.5rem;
 
 }
-.pokemon-center{
-    height:15vh;
-    background-color: #c43b29;
-}
+
 
 .button-style{
     border-radius: 15px;
     width: 150px;
     height: 40px;
-    border-width: 5px;
-    border-color: black;
     font-family: Chalkboard;
-    margin: 1rem;
     font-size: 20px;
+    color: #6F502D;
+    border: 3px solid #6F502D;
 }
 
-.pikachu{
-    position: absolute;
-    right: 0px;
-    bottom: 15px;
-}
 
 .cardArea{
     height:65vh;
-    width: 70vw;
+    width: 80vw;
     margin: auto;
-    padding: 10px;
-    /*display: grid;*/
-    /*grid-template-columns: repeat(6, 100px);*/
-    /*grid-template-rows: repeat(3, 50px);*/
 }
 
-.egg{
+.card-logo{
     height: auto;
     display: block;
-    margin: auto;
+    margin-top: 1rem;
     width: 100%;
 }
 
@@ -61,18 +47,18 @@ body{
     height: 33.33%;
 }
 
-/*@media only screen and (max-width:940px){ !* Tablets*!*/
-    /*.cardBack {*/
-        /*max-width: 100%;*/
-        /*height: auto;*/
-    /*}*/
-/*}*/
-
 
 @media only screen and (max-width:940px){ /* Tablets*/
     .cardContainer {
         width: 16.66%;
-        height: 33.33%;
+        height: 27.33%;
+    }
+}
+
+@media only screen and (max-width:700px){ /* Tablets*/
+    .cardContainer {
+        width: 16.66%;
+        height: 20.33%;
     }
 }
 
@@ -83,11 +69,17 @@ body{
     width: 90%;
     position: relative;
     float: left;
-    border-style: solid;
-    border-color: darkgrey;
-    border-width: 5px;
-    border-radius:5px;
-    box-shadow: gray;
+    /*border: 2px solid #6F502D;*/
+}
+
+.main-title{
+    padding: 10px;
+    font-size: 4vh;
+    font-family:Chalkduster ;
+    text-align:center;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+
 }
 
 .cardFront, .cardBack{
@@ -113,11 +105,11 @@ body{
 }
 
 .cardFront{
-    background-color: beige;
+    background-color: white;
 }
 
 .cardBack{
-    background-color: black;
+    background-color:white;
 }
 
 .game-style{
@@ -125,13 +117,10 @@ body{
     font-family: Chalkboard;
 }
 
-
 .footer{
     height: 15vh;
     margin-left: 15%;
     padding: 10px;
-
-
 }
 
 .hidden{
