@@ -1,9 +1,14 @@
 body{
     height: 100vh;
     margin: 0;
-    background-color: #faf4e1;
+    background: url("2gfwG.png");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-attachment: scroll;
+    background-size: cover;
     color:#6F502D;
 }
+
 
 
 .start-logo{
@@ -14,6 +19,19 @@ body{
     width: 100px;
     padding: 0.5rem;
 
+}
+
+.main-page-pokemon{
+    height: 20rem;
+    display: inline-flex;
+
+
+}
+
+.main-container{
+    right: 0;
+    top: 100%;
+    position: absolute;
 }
 
 
@@ -28,8 +46,11 @@ body{
 }
 
 
+
+
 .cardArea{
-    height:65vh;
+    padding-top: 2rem;
+    height:75vh;
     width: 80vw;
     margin: auto;
 }
@@ -43,10 +64,16 @@ body{
 
 .cardContainer{
     width: 16.66%;
-    float: left;
     height: 33.33%;
+    display: inline-block;
+    position: relative;
+    background-color: transparent;
+    transition: all .1s ease-in-out;
 }
 
+.attempts-area .matches-area{
+    display: inline-block;
+}
 
 @media only screen and (max-width:940px){ /* Tablets*/
     .cardContainer {
@@ -63,13 +90,15 @@ body{
 }
 
 .card{
-    top: 5%;
-    left: 5%;
-    height: 90%;
-    width: 90%;
-    position: relative;
-    float: left;
-    /*border: 2px solid #6F502D;*/
+    height: 88%;
+    width: 88%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff;
+    border: 5px solid #433c3c;
+    box-shadow: 3px 3px 3px 0 rgba(0,0,0,0.5);
 }
 
 .main-title{
@@ -95,7 +124,9 @@ body{
     font-size: 80px;
     margin: 1.5rem;
 }
-
+.sub-title{
+    font-family: Chalkboard;
+}
 .start{
     position:absolute;
     top:40%;
@@ -106,6 +137,12 @@ body{
 
 .cardFront{
     background-color: white;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    object-fit: contain;
 }
 
 .cardBack{
@@ -118,9 +155,15 @@ body{
 }
 
 .footer{
-    height: 15vh;
-    margin-left: 15%;
+    box-sizing: border-box;
     padding: 10px;
+    border: 5px solid black;
+    height: 10%;
+    background-color: white;
+    text-align: center;
+    position: relative;
+    margin-top: 2rem;
+    bottom: 0px;
 }
 
 .hidden{
