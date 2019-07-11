@@ -7,3 +7,4 @@ Once the player has match 2 cards they will be displayed face up until all pairs
 accuracy of their choices.
 
 
+Written in JavaScript, using jQuery
